@@ -1,0 +1,26 @@
+---
+name: App-ZofCMS-Plugin-Comments
+version: 0.0101
+author:
+  - 'Zoffix Znet <zoffix@cpan.org>'
+abstract: drop-in visitor comments support.
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  DBI: 1.602
+  HTML::Entities: 1.35
+  HTML::Template: 2.9
+  Mail::Send: 2.04
+  Storable: 2.18
+  URI: 1.35
+build_requires:
+  Test::More: 0
+provides:
+  App::ZofCMS::Plugin::Comments:
+    file: lib/App/ZofCMS/Plugin/Comments.pm
+    version: 0.0101
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2

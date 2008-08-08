@@ -1,0 +1,57 @@
+App-ZofCMS-Plugin-Comments
+
+The module is a plugin for L<App::ZofCMS>. It provides means to easily add
+"visitor comments" to your pages. The plugin offers configurable
+flood protection ( $x comments per $y seconds ) as well as ability to
+notify you of new comments via e-mail. The "moderation" function is also
+implemented, what that means is that you (the admin) would get two links
+(via e-mail) following one of them will approve the comment; following the
+other will simply delete the comment from the database.
+
+I am an utterly lazy person, thus you may find that not everything you
+may want to configure in the plugin is configurable. The plugin is
+yet to undergo (at the time of this writing) deployment testing, as in
+how flexible it is. If you'd like to see some features added, don't be shy
+to drop me a line to C<zoffix@cpan.org> 
+
+This documentation assumes you've read L<App::ZofCMS>,
+L<App::ZofCMS::Config> and L<App::ZofCMS::Template>
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Build.PL
+	./Build
+	./Build test
+	./Build install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc App::ZofCMS::Plugin::Comments
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=App-ZofCMS-Plugin-Comments
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/App-ZofCMS-Plugin-Comments
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/App-ZofCMS-Plugin-Comments
+
+    Search CPAN
+        http://search.cpan.org/dist/App-ZofCMS-Plugin-Comments
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2008 Zoffix Znet
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
