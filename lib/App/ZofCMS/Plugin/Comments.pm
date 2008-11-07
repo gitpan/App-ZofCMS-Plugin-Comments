@@ -3,7 +3,7 @@ package App::ZofCMS::Plugin::Comments;
 use warnings;
 use strict;
 
-our $VERSION = '0.0101';
+our $VERSION = '0.0102';
 use DBI;
 use URI;
 use HTML::Template;
@@ -139,7 +139,7 @@ sub _fetch_comments {
     my $comment_number = 0;
     @$data = sort { $b->[5] <=> $a->[5] }
         map {
-            $_->[-1] = $comment_number++; $_
+            push @$_, $comment_number++; $_
         } @$data;
 
     if ( $plug_conf->{sort} ) {
@@ -452,7 +452,7 @@ sub _form_template {
             id="zofcms_comments_comment" cols="40" rows="10"><tmpl_var name="comment" escape="html"></textarea>
         </li>
     </ul>
-    <input type="submit" value="Post">
+    <input id="zofcms_comments_submit" type="submit" value="Post">
 </fieldset>
 </form>
 </tmpl_if>
