@@ -3,12 +3,12 @@ package App::ZofCMS::Plugin::Comments;
 use warnings;
 use strict;
 
-our $VERSION = '0.0102';
+our $VERSION = '0.0103';
 use DBI;
 use URI;
 use HTML::Template;
 use HTML::Entities;
-use Storable qw/lock_store lock_retrieve/;
+use Storable (qw/lock_store lock_retrieve/);
 
 sub new { return bless {}, shift }
 
@@ -478,6 +478,8 @@ END_MAIL_TEMPLATE
 
 1;
 __END__
+
+=encoding utf8
 
 =head1 NAME
 

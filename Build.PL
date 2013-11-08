@@ -17,7 +17,9 @@ my $builder = Module::Build->new(
         'HTML::Entities' => 1.35,
         'Storable'       => 2.18,
         'Mail::Send'     => 2.04,
+        'perl'           => '5.006',
     },
+    configure_requires => { 'Module::Build' => 0 },
     add_to_cleanup      => [ 'App-ZofCMS-Plugin-Comments-*' ],
     create_makefile_pl => 'traditional',
 );

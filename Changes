@@ -1,9 +1,12 @@
 Revision history for App-ZofCMS-Plugin-Comments
 
-0.0102  November 7, 2008
-        Fixed a bug that produced incorrect time stamps on comments.
-        Added an id="" attribute to the submit button
+0.0103  2013-11-07
+        - Minor fixes to comply with specs and Kwalitee game
 
-0.0101  August 7, 2008
-        First version, released on an unsuspecting world.
+0.0102  2008-11-07
+        - Fixed a bug that produced incorrect time stamps on comments.
+        - Added an id="" attribute to the submit button
+
+0.0101  2008-08-07
+        - First version, released on an unsuspecting world.
 
